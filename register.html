@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="register.js" defer ></script>
+        <link rel="stylesheet" href="./reg.css">
+    </head>
+    <body>
+        <div class="full-screen-container">
+            <div class="login-container">
+                <h1 class="login-title">Welcome</h1>
+
+                <form action="/create-user" method="post" class="form">
+
+                    <div class="input-group">
+                        <label for="userName">User Name</label>
+                        <input name="userName" type="text" name="email" id="userName">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="password">Password</label>
+                        <input name="password" type="password" name="email" id="password">
+                        
+                    </div>
+    
+                    <div class="input-group">
+                        <label for="password">Repeat Password</label>
+                        <input type="password" name="repeatPassword" id="repeatPassword">
+                        
+                    </div>
+    
+                    <button type="submit" class="login-btn">Register</button>
+                    
+                    <p>Do you have an account? </p>
+                    <button class="login-btn" type="submit"><a href="/login">Login</a></button>
+                </form>
+            </div>
+        </div>
+        <div>
+        </div>
+    </body>
+</html>
